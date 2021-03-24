@@ -1,0 +1,4 @@
+general:select  general2:select  hpadj:1  role:lord  equip:zhuahuangfeidian
+    general:shangyang  general2:wuguang  maxhp:4  role:rebel
+    general:renhengzhi general2:luban  maxhp:4  role:rebel
+    general:murong  general2:goujian  maxhp:5  role:renegade  starter:true

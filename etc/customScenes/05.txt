@@ -1,0 +1,5 @@
+general:select  role:rebel  equip:axe  starter:true
+    general:jingke  role:rebel
+    general:shangyang  role:loyalist
+    general:yingzheng  role:lord  hp:4  draw:2
+    general:goujian  role:loyalist

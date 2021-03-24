@@ -1,0 +1,2 @@
+general:select role:lord starter:true
+general:linchong general2:wusong role:rebel maxhp:4 hp:4 equip:65

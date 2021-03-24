@@ -1,0 +1,6 @@
+general:select  role:loyalist  equip:dilu
+    general:goujian  role:rebel
+    general:diaochan  role:rebel
+    general:shangyang  role:rebel
+    general:yuji  role:loyalist
+    general:liuche  role:lord  maxhp:3  starter:true

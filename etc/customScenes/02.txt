@@ -1,0 +1,2 @@
+general:select  role:rebel
+    general:liyu  maxhp:3  hp:2  role:lord  equip:eight_diagram,hualiu  starter:true

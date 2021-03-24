@@ -1,0 +1,4 @@
+general:select  role:rebel  starter:true
+    general:xueli  role:rebel
+    general:panan  maxhp:4  role:lord
+    general:wangzhaojun  general2:xiaoqiao  role:loyalist

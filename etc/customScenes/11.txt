@@ -1,0 +1,5 @@
+general:select  general2:select  role:lord  starter:true
+    general:tiemuzhen  equip:blade  role:rebel
+    general:zhaokuangyin  general2:sunjian  maxhp:4  role:rebel  equip:guding_blade
+    general:chensheng  general2:liaohua  equip:ice_sword  role:rebel
+    general:qinqiong  general2:luocheng  maxhp:4  role:loyalist

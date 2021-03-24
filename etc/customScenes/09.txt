@@ -1,0 +1,4 @@
+general:select  role:lord  starter:true
+    general:songjiang  role:rebel
+    general:shangyang  general2:diaochan  role:loyalist
+    general:wusong  general2:likui  maxhp:3  role:rebel

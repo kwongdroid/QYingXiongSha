@@ -1,0 +1,3 @@
+general:select  general2:select  role:renegade
+    general:liuche  general2:kangxi  maxhp:3  role:lord  starter:true
+    general:liubang  general2:lvzhi  maxhp:5  role:rebel

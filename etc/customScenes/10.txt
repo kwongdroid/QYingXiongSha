@@ -1,0 +1,5 @@
+ general:select  general2:select  role:lord  equip:double_sword  starter:true
+    general:xishi  role:rebel
+    general:zhaofeiyan role:loyalist
+    general:baosi  maxhp:4  role:rebel
+    general:lvzhi  role:rebel

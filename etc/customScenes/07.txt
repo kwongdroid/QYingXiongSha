@@ -1,0 +1,5 @@
+general:select  general2:select  role:loyalist  starter:true
+    general:xiaoqiao  general2:libai  maxhp:4  role:lord  equip:fan
+    general:wusong  role:rebel
+    general:likui  role:rebel  equip:vine
+    general:songjiang  role:rebel  equip:vine,axe

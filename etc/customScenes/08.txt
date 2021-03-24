@@ -1,0 +1,5 @@
+general:select  general2:liubei  general3:gongsunzan  role:rebel
+    general:chensheng  role:rebel  equip:spear
+    general:xiangyu  general2:yuji  maxhp:3  role:loyalist  equip:hualiu  starter:true
+    general:liubang  general2:lvzhi  maxhp:5  draw:5  role:lord  equip:halberd,chitu
+    general:wuguang  role:rebel  equip:blade

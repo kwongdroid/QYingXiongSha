@@ -1,0 +1,5 @@
+general:select  role:renegade  starter:true
+    general:liubang  general2:liubei  maxhp:3  role:rebel
+    general:songjiang  general2:diaochan  maxhp:3  role:rebel
+    general:linchong  general2:luzhishen  maxhp:4  hp:2  role:loyalist
+    general:lvzhi  general2:xiaoqiao  maxhp:4  role:lord

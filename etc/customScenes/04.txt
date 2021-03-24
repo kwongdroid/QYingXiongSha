@@ -1,0 +1,3 @@
+general:select  role:rebel
+    general:jingke  role:rebel  starter:true
+    general:yuji  general2:bianque  maxhp:3  role:lord  equip:eight_diagram
