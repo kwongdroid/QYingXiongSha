@@ -450,8 +450,29 @@ xxxx:addSkill(xjingzhun)
 xxxx:addSkill(xqianghua)
 xxxx:addSkill(shangzhichou)
 
+ZZZZ = sgs.General(extension, "ZZZZ", "qun", 4,true,true,true)
+luabaojus=sgs.CreateTriggerSkill{
+	name="luabaojus",
+	events={sgs.GameStart},
+	frequency = sgs.Skill_NotFrequent,
+	priority=4,
+	on_trigger=function(self,event,player,data)
+		local room=player:getRoom()
+		if event==sgs.GameStart then
+			local mhp = sgs.QVariant()
+			local x = player:getMaxHP()+4
+			mhp:setValue(x)
+			local data=sgs.QVariant(x)
+			room:setPlayerProperty(player,"maxhp",mhp)
+			room:setPlayerProperty(player, "hp", data)
+		end
+	end
+}
+ZZZZ:addSkill(luabaojus)
+
 sgs.LoadTranslationTable{	
-	["luabaojus"]="宝具",	
+	["luabaojus"]="宝具",
+    [":luabaojus"]="<font color=\"blue\"><b>被动技</b></font>，游戏开始时，体力上限+4。",
 	["xixue"]="吸血",     
     [":xixue"]="<font color=\"blue\"><b>被动技</b></font>，你的【杀】对目标造成伤害时，有79%几率使自己回复1点血量",			
 	["shazhitan"]="杀之贪",     
@@ -509,17 +530,10 @@ sgs.LoadTranslationTable{
     [":newxiejia"] = "<font color=\"blue\"><b>被动技</b></font>，被【杀】掉血后，有79%几率能获得杀你的角色装备区或判定区的牌（目标装备区或判定区没有牌时，不生效）。"	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+local generalnames=sgs.Sanguosha:getLimitedGeneralNames()
+for _, generalname in ipairs(generalnames) do
+	local general = sgs.Sanguosha:getGeneral(generalname)
+	if general then
+		general:addSkill("luabaojus")			
+	end
+end
