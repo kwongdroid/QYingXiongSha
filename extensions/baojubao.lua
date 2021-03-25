@@ -477,9 +477,7 @@ sgs.LoadTranslationTable{
     [":xixue"]="<font color=\"blue\"><b>被动技</b></font>，你的【杀】对目标造成伤害时，有79%几率使自己回复1点血量",			
 	["shazhitan"]="杀之贪",     
     [":shazhitan"]="<font color=\"blue\"><b>被动技</b></font>，你的【杀】对目标造成伤害时，有79%几率使自己摸1张牌",	
-	["shazhixue"] = "杀之削",
-    [":shazhixue"] = "<font color=\"blue\"><b>被动技</b></font>，你的【杀】对目标造成伤害时，有79%几率弃置目标1张手牌",	
-    ["shazhixie"] = "杀之卸",
+	["shazhixie"] = "杀之卸",
     [":shazhixie"] = "<font color=\"blue\"><b>被动技</b></font>，你的【杀】对目标造成伤害时，有79%几率弃置目标装备区的1张牌",					
 	["shangzhitan"]="伤之贪",     
     [":shangzhitan"]="<font color=\"blue\"><b>被动技</b></font>，当你受到【杀】的伤害时，有79%几率使自己摸1张牌",	
@@ -536,4 +534,976 @@ for _, generalname in ipairs(generalnames) do
 	if general then
 		general:addSkill("luabaojus")			
 	end
+end
+
+-- 1
+local caocao = sgs.Sanguosha:getGeneral("caocao")
+if caocao then
+	caocao:addSkill("newlangyan")
+	caocao:addSkill("fenghuo")
+	caocao:addSkill("tanzhishou")
+	caocao:addSkill("yingzi")
+end
+
+-- 2
+local yingzheng = sgs.Sanguosha:getGeneral("yingzheng")
+if yingzheng then
+	yingzheng:addSkill("xixue")
+	yingzheng:addSkill("fanji")
+	yingzheng:addSkill("xqianghua")
+	yingzheng:addSkill("wusheng")
+end
+
+-- 3
+local liubang = sgs.Sanguosha:getGeneral("liubang")
+if liubang then
+	liubang:addSkill("newlangyan")
+	liubang:addSkill("fenghuo")
+	liubang:addSkill("tanzhishou")
+	liubang:addSkill("jianxiongyxs")
+end
+
+-- 4
+local chensheng = sgs.Sanguosha:getGeneral("chensheng")
+if chensheng then
+	chensheng:addSkill("hongshadun")
+	chensheng:addSkill("diehun")
+	chensheng:addSkill("heishadun")
+	chensheng:addSkill("lijian")
+end
+
+-- 5
+local yuji = sgs.Sanguosha:getGeneral("yuji")
+if yuji then
+	yuji:addSkill("xixue")
+	yuji:addSkill("fanji")
+	yuji:addSkill("xqianghua")
+	yuji:addSkill("wusheng")
+end
+
+-- 6
+local likui = sgs.Sanguosha:getGeneral("likui")
+if likui then
+	likui:addSkill("xixue")
+	likui:addSkill("fanji")
+	likui:addSkill("shangzhichou")
+	likui:addSkill("jianxiong")
+end
+
+-- 7
+local shangyang = sgs.Sanguosha:getGeneral("shangyang")
+if shangyang then
+	shangyang:addSkill("tanzhishou")
+	shangyang:addSkill("zhiheng")
+	shangyang:addSkill("shazhitan")
+	shangyang:addSkill("kongju")
+end
+
+-- 8
+local wusong = sgs.Sanguosha:getGeneral("wusong")
+if wusong then
+	wusong:addSkill("xqianghua")
+	wusong:addSkill("toujivs")
+	wusong:addSkill("xjingzhun")
+	wusong:addSkill("tianyi")
+end
+
+-- 9
+local zhaofeiyan = sgs.Sanguosha:getGeneral("zhaofeiyan")
+if zhaofeiyan then
+	zhaofeiyan:addSkill("newlangyan")
+	zhaofeiyan:addSkill("fenghuo")
+	zhaofeiyan:addSkill("qingling")
+	zhaofeiyan:addSkill("tuqiang")
+end
+
+-- 10
+local songjiang = sgs.Sanguosha:getGeneral("songjiang")
+if songjiang then
+	songjiang:addSkill("hongshadun")
+	songjiang:addSkill("jieyin")
+	songjiang:addSkill("heishadun")
+	songjiang:addSkill("qiangxi")
+end
+
+-- 11
+local tantaiming = sgs.Sanguosha:getGeneral("tantaiming")
+if tantaiming then
+	tantaiming:addSkill("shazhitan")
+	tantaiming:addSkill("tianyi")
+	tantaiming:addSkill("xqianghua")
+	tantaiming:addSkill("liegong")
+end
+
+-- 12
+local yangyanzhao = sgs.Sanguosha:getGeneral("yangyanzhao")
+if yangyanzhao then
+	yangyanzhao:addSkill("shazhitan")
+	yangyanzhao:addSkill("wusheng")
+	yangyanzhao:addSkill("xjingzhun")
+	yangyanzhao:addSkill("tianyi")
+end
+
+-- 13
+local yuefei = sgs.Sanguosha:getGeneral("yuefei")
+if yuefei then
+	yuefei:addSkill("xjingzhun")
+	yuefei:addSkill("tianyi")
+	yuefei:addSkill("shazhitan")
+	yuefei:addSkill("toujivs")
+end
+
+-- 14
+local liubowen = sgs.Sanguosha:getGeneral("liubowen")
+if liubowen then
+	liubowen:addSkill("hongshadun")
+	liubowen:addSkill("jieyin")
+	liubowen:addSkill("heishadun")
+	liubowen:addSkill("lijian")
+end
+
+-- 15
+local lishimin = sgs.Sanguosha:getGeneral("lishimin")
+if lishimin then
+	lishimin:addSkill("shangzhitan")
+	lishimin:addSkill("jianxiong")
+	lishimin:addSkill("shazhitan")
+	lishimin:addSkill("zhiheng")
+end
+
+-- 16
+local hanxin = sgs.Sanguosha:getGeneral("hanxin")
+if hanxin then
+	hanxin:addSkill("newlangyan")
+	hanxin:addSkill("fenghuo")
+	hanxin:addSkill("tanzhishou")
+	hanxin:addSkill("jianxiongyxs")
+end
+
+-- 17
+local goujian = sgs.Sanguosha:getGeneral("goujian")
+if goujian then
+	goujian:addSkill("qingling")
+	goujian:addSkill("bazhen")
+	goujian:addSkill("shazhitan")
+	goujian:addSkill("zhiheng")
+end
+
+-- 18
+local shiqian = sgs.Sanguosha:getGeneral("shiqian")
+if shiqian then
+	-- shiqian:addSkill("探囊")
+	shiqian:addSkill("zhiheng")
+	shiqian:addSkill("shazhitan")
+	shiqian:addSkill("tianyi")
+end
+
+-- 19
+local zhaokuangyin = sgs.Sanguosha:getGeneral("zhaokuangyin")
+if zhaokuangyin then
+	zhaokuangyin:addSkill("tanzhishou")
+	zhaokuangyin:addSkill("yingzi")
+	zhaokuangyin:addSkill("xqianghua")
+	zhaokuangyin:addSkill("sanbanfu")
+end
+
+-- 20
+local xishi = sgs.Sanguosha:getGeneral("xishi")
+if xishi then
+	xishi:addSkill("tanzhishou")
+	xishi:addSkill("kongju")
+	xishi:addSkill("xjingzhun")
+	xishi:addSkill("zhiheng")
+end
+
+-- 21
+local baosi = sgs.Sanguosha:getGeneral("baosi")
+if baosi then
+	baosi:addSkill("newlangyan")
+	baosi:addSkill("jianxiongyxs")
+	baosi:addSkill("tanzhishou")
+	baosi:addSkill("yingzi")
+end
+
+-- 22
+local xiangyu = sgs.Sanguosha:getGeneral("xiangyu")
+if xiangyu then
+	xiangyu:addSkill("xqianghua")
+	xiangyu:addSkill("tianyi")
+	xiangyu:addSkill("shazhitan")
+	xiangyu:addSkill("toujivs")
+end
+
+-- 23
+local tiemuzhen = sgs.Sanguosha:getGeneral("tiemuzhen")
+if tiemuzhen then
+	tiemuzhen:addSkill("shazhitan")
+	tiemuzhen:addSkill("tianyi")
+	tiemuzhen:addSkill("xqianghua")
+	tiemuzhen:addSkill("tieji")
+end
+
+-- 24
+local bianque = sgs.Sanguosha:getGeneral("bianque")
+if bianque then
+	bianque:addSkill("newyixin")
+	bianque:addSkill("kongju")
+	bianque:addSkill("shangzhitan")
+	bianque:addSkill("jianxiong")
+end
+
+-- 25
+local chenyuanyuan = sgs.Sanguosha:getGeneral("chenyuanyuan")
+if chenyuanyuan then
+	chenyuanyuan:addSkill("hongshadun")
+	chenyuanyuan:addSkill("tuxi")
+	chenyuanyuan:addSkill("heishadun")
+	chenyuanyuan:addSkill("jieyin")
+end
+
+-- 26
+local guanyu = sgs.Sanguosha:getGeneral("guanyu")
+if guanyu then
+	guanyu:addSkill("shazhitan")
+	guanyu:addSkill("wusheng")
+	guanyu:addSkill("xqianghua")
+	guanyu:addSkill("wushuang")
+end
+
+-- 27
+local wuzetian = sgs.Sanguosha:getGeneral("wuzetian")
+if wuzetian then
+	wuzetian:addSkill("tanzhishou")
+	wuzetian:addSkill("yingzi")
+	wuzetian:addSkill("shangzhitan")
+	wuzetian:addSkill("jianxiong")
+end
+
+-- 28
+local renhengzhi = sgs.Sanguosha:getGeneral("renhengzhi")
+if renhengzhi then
+	renhengzhi:addSkill("xqianghua")
+	renhengzhi:addSkill("liegong")
+	renhengzhi:addSkill("shazhitan")
+	renhengzhi:addSkill("toujivs")
+end
+
+-- 29
+local qinqiong = sgs.Sanguosha:getGeneral("qinqiong")
+if qinqiong then
+	qinqiong:addSkill("xixue")
+	qinqiong:addSkill("yiji")
+	qinqiong:addSkill("xqianghua")
+	qinqiong:addSkill("wusheng")
+end
+
+-- 30
+local huamulan = sgs.Sanguosha:getGeneral("huamulan")
+if huamulan then
+	huamulan:addSkill("newlangyan")
+	huamulan:addSkill("fenghuo")
+	huamulan:addSkill("tanzhishou")
+	huamulan:addSkill("zhiheng")
+end
+
+-- 31
+local murong = sgs.Sanguosha:getGeneral("murong")
+if murong then
+	murong:addSkill("hongshadun")
+	murong:addSkill("tuxi")
+	murong:addSkill("heishadun")
+	murong:addSkill("jieyin")
+end
+
+-- 32
+local lishishi = sgs.Sanguosha:getGeneral("lishishi")
+if lishishi then
+	lishishi:addSkill("shangzhitan")
+	lishishi:addSkill("jianxiong")
+	lishishi:addSkill("tanzhishou")
+	lishishi:addSkill("kongju")
+end
+
+-- 33
+local luzhishen = sgs.Sanguosha:getGeneral("luzhishen")
+if luzhishen then
+	luzhishen:addSkill("shazhitan")
+	luzhishen:addSkill("tianyi")
+	luzhishen:addSkill("xjingzhun")
+	luzhishen:addSkill("huoshen")
+end
+
+-- 34
+local jingke = sgs.Sanguosha:getGeneral("jingke")
+if jingke then
+	jingke:addSkill("xixue")
+	jingke:addSkill("fanji")
+	jingke:addSkill("xqianghua")
+	jingke:addSkill("jianxiong")
+end
+
+-- 35
+local zhugeliang = sgs.Sanguosha:getGeneral("zhugeliang")
+if zhugeliang then
+	zhugeliang:addSkill("shangzhitan")
+	zhugeliang:addSkill("fankui")
+	zhugeliang:addSkill("shazhitan")
+	zhugeliang:addSkill("tianyi")
+end
+
+-- 36
+local lianpo = sgs.Sanguosha:getGeneral("lianpo")
+if lianpo then
+	lianpo:addSkill("xjingzhun")
+	lianpo:addSkill("paoxiao")
+	lianpo:addSkill("shazhitan")
+	lianpo:addSkill("tianyi")
+end
+
+-- 37
+local lvzhi = sgs.Sanguosha:getGeneral("lvzhi")
+if lvzhi then
+	lvzhi:addSkill("tanzhishou")
+	-- lvzhi:addSkill("穿杨")
+	lvzhi:addSkill("shangzhitan")
+	lvzhi:addSkill("yingzi")
+end
+
+-- 38
+local chengyaojin = sgs.Sanguosha:getGeneral("chengyaojin")
+if chengyaojin then
+	chengyaojin:addSkill("xqianghua")
+	chengyaojin:addSkill("tianyi")
+	chengyaojin:addSkill("shazhitan")
+	chengyaojin:addSkill("toujivs")
+end
+
+-- 39
+local xiaoqiao = sgs.Sanguosha:getGeneral("xiaoqiao")
+if xiaoqiao then
+	xiaoqiao:addSkill("qingling")
+	xiaoqiao:addSkill("tuqiang")
+	xiaoqiao:addSkill("tanzhishou")
+	xiaoqiao:addSkill("kongju")
+end
+
+-- 40
+local panan = sgs.Sanguosha:getGeneral("panan")
+if panan then
+	panan:addSkill("newlangyan")
+	panan:addSkill("fenghuo")
+	panan:addSkill("tanzhishou")
+	panan:addSkill("zhiheng")
+end
+
+-- 41
+local zhuyuanzhang = sgs.Sanguosha:getGeneral("zhuyuanzhang")
+if zhuyuanzhang then
+	zhuyuanzhang:addSkill("xjingzhun")
+	zhuyuanzhang:addSkill("wusheng")
+	zhuyuanzhang:addSkill("xqianghua")
+	zhuyuanzhang:addSkill("tianyi")
+end
+
+-- 42
+local lizicheng = sgs.Sanguosha:getGeneral("lizicheng")
+if lizicheng then
+	lizicheng:addSkill("hongshadun")
+	lizicheng:addSkill("tuxi")
+	lizicheng:addSkill("heishadun")
+	lizicheng:addSkill("lijian")
+end
+
+-- 43
+local luban = sgs.Sanguosha:getGeneral("luban")
+if luban then
+	luban:addSkill("shazhitan")
+	luban:addSkill("tianyi")
+	luban:addSkill("xjingzhun")
+	luban:addSkill("wusheng")
+end
+
+-- 44
+local zhangfei = sgs.Sanguosha:getGeneral("zhangfei")
+if zhangfei then
+	zhangfei:addSkill("shangzhitan")
+	zhangfei:addSkill("jianxiong")
+	zhangfei:addSkill("shangzhichou")
+	zhangfei:addSkill("ganglie")
+end
+
+-- 45
+local linchong = sgs.Sanguosha:getGeneral("linchong")
+if linchong then
+	linchong:addSkill("xqianghua")
+	linchong:addSkill("tianyi")
+	linchong:addSkill("shazhitan")
+	linchong:addSkill("toujivs")
+end
+
+-- 46
+local liyu = sgs.Sanguosha:getGeneral("liyu")
+if liyu then
+	liyu:addSkill("qingling")
+	liyu:addSkill("bazhen")
+	liyu:addSkill("tanzhishou")
+	liyu:addSkill("tuqiang")
+end
+
+-- 47
+local diaochan = sgs.Sanguosha:getGeneral("diaochan")
+if diaochan then
+	diaochan:addSkill("xixue")
+	diaochan:addSkill("fanji")
+	diaochan:addSkill("xqianghua")
+	diaochan:addSkill("wusheng")
+end
+
+-- 48
+local yangyuhuan = sgs.Sanguosha:getGeneral("yangyuhuan")
+if yangyuhuan then
+	yangyuhuan:addSkill("shangzhixie")
+	yangyuhuan:addSkill("huoshen")
+	yangyuhuan:addSkill("xjingzhun")
+	yangyuhuan:addSkill("wusheng")
+end
+
+-- 49
+local libai = sgs.Sanguosha:getGeneral("libai")
+if libai then
+	libai:addSkill("tanzhishou")
+	libai:addSkill("yingzi")
+	libai:addSkill("shangzhichou")
+	libai:addSkill("ganglie")
+end
+
+-- 50
+local sunwu = sgs.Sanguosha:getGeneral("sunwu")
+if sunwu then
+	sunwu:addSkill("shangzhitan")
+	sunwu:addSkill("yiji")
+	sunwu:addSkill("tanzhishou")
+	sunwu:addSkill("kongju")
+end
+
+-- 51
+local mozi = sgs.Sanguosha:getGeneral("mozi")
+if mozi then
+	mozi:addSkill("hongshadun")
+	mozi:addSkill("diehun")
+	mozi:addSkill("heishadun")
+	mozi:addSkill("tuxi")
+end
+
+-- 52
+local kangxi = sgs.Sanguosha:getGeneral("kangxi")
+if kangxi then
+	kangxi:addSkill("tanzhishou")
+	kangxi:addSkill("yingzi")
+	kangxi:addSkill("shangzhitan")
+	kangxi:addSkill("jianxiong")
+end
+
+-- 53
+local liuche = sgs.Sanguosha:getGeneral("liuche")
+if liuche then
+	liuche:addSkill("tanzhishou")
+	liuche:addSkill("lijian")
+	liuche:addSkill("shangzhichou")
+	liuche:addSkill("ganglie")
+end
+
+-- 54
+local tangbohu = sgs.Sanguosha:getGeneral("tangbohu")
+if tangbohu then
+	tangbohu:addSkill("shangzhitan")
+	tangbohu:addSkill("jianxiong")
+	tangbohu:addSkill("newlangyan")
+	tangbohu:addSkill("fenghuo")
+end
+
+-- 55
+local sp_wangzhaojun = sgs.Sanguosha:getGeneral("sp_wangzhaojun")
+if sp_wangzhaojun then
+	sp_wangzhaojun:addSkill("shangzhichou")
+	sp_wangzhaojun:addSkill("ganglie")
+	sp_wangzhaojun:addSkill("shangzhixue")
+	sp_wangzhaojun:addSkill("jieyin")
+end
+
+-- 56
+local chen_muguiying = sgs.Sanguosha:getGeneral("chen_muguiying")
+if chen_muguiying then
+	chen_muguiying:addSkill("xqianghua")
+	chen_muguiying:addSkill("tianyi")
+	chen_muguiying:addSkill("shazhitan")
+	chen_muguiying:addSkill("toujivs")
+end
+
+-- 57
+local min_muguiying = sgs.Sanguosha:getGeneral("min_muguiying")
+if min_muguiying then
+	min_muguiying:addSkill("tanzhishou")
+	min_muguiying:addSkill("yingzi")
+	min_muguiying:addSkill("shangzhichou")
+	min_muguiying:addSkill("ganglie")
+end
+
+-- 58
+local baiqi = sgs.Sanguosha:getGeneral("baiqi")
+if baiqi then
+	baiqi:addSkill("xjingzhun")
+	baiqi:addSkill("tianyi")
+	baiqi:addSkill("shazhitan")
+	baiqi:addSkill("toujivs")
+end
+
+-- 59
+local sp_luocheng = sgs.Sanguosha:getGeneral("sp_luocheng")
+if sp_luocheng then
+	sp_luocheng:addSkill("shazhitan")
+	sp_luocheng:addSkill("paoxiao")
+	sp_luocheng:addSkill("xqianghua")
+	sp_luocheng:addSkill("wusheng")
+end
+
+-- 60
+local zhaowu = sgs.Sanguosha:getGeneral("zhaowu")
+if zhaowu then
+	zhaowu:addSkill("xqianghua")
+	zhaowu:addSkill("tianyi")
+	zhaowu:addSkill("shazhitan")
+	zhaowu:addSkill("danji")
+end
+
+-- 61
+local bole = sgs.Sanguosha:getGeneral("bole")
+if bole then
+	bole:addSkill("hongshadun")
+	bole:addSkill("tuxi")
+	bole:addSkill("heishadun")
+	bole:addSkill("lijian")
+end
+
+-- 62
+local yangguang = sgs.Sanguosha:getGeneral("yangguang")
+if yangguang then
+	yangguang:addSkill("shangzhitan")
+	yangguang:addSkill("zhiheng")
+	yangguang:addSkill("newlangyan")
+	yangguang:addSkill("fenghuo")
+end
+
+-- 63
+local guiguzi = sgs.Sanguosha:getGeneral("guiguzi")
+if guiguzi then
+	guiguzi:addSkill("tanzhishou")
+	guiguzi:addSkill("yingzi")
+	guiguzi:addSkill("shangzhitan")
+	guiguzi:addSkill("ganglie")
+end
+
+-- 64
+local sunquan = sgs.Sanguosha:getGeneral("sunquan")
+if sunquan then
+	sunquan:addSkill("tanzhishou")
+	sunquan:addSkill("yingzi")
+	sunquan:addSkill("shangzhitan")
+	sunquan:addSkill("jianxiong")
+end
+
+-- 65
+local jifa = sgs.Sanguosha:getGeneral("jifa")
+if jifa then
+	jifa:addSkill("tanzhishou")
+	jifa:addSkill("yingzi")
+	jifa:addSkill("shangzhitan")
+	jifa:addSkill("jianxiong")
+end
+
+-- 66
+local liqingzhao = sgs.Sanguosha:getGeneral("liqingzhao")
+if liqingzhao then
+	liqingzhao:addSkill("tanzhishou")
+	liqingzhao:addSkill("zhiheng")
+	liqingzhao:addSkill("shangzhitan")
+	liqingzhao:addSkill("jianxiongyxs")
+end
+
+-- 67
+local xuanzang = sgs.Sanguosha:getGeneral("xuanzang")
+if xuanzang then
+	xuanzang:addSkill("xixue")
+	xuanzang:addSkill("fanji")
+	xuanzang:addSkill("xqianghua")
+	xuanzang:addSkill("wusheng")
+end
+
+-- 68
+local wenjiang = sgs.Sanguosha:getGeneral("wenjiang")
+if wenjiang then
+	wenjiang:addSkill("tanzhishou")
+	wenjiang:addSkill("zhiheng")
+	wenjiang:addSkill("shangzhitan")
+	wenjiang:addSkill("jizhi")
+end
+
+-- 69
+local baozheng = sgs.Sanguosha:getGeneral("baozheng")
+if baozheng then
+	baozheng:addSkill("xixue")
+	baozheng:addSkill("fanji")
+	baozheng:addSkill("xqianghua")
+	baozheng:addSkill("wusheng")
+end
+
+-- 70
+local dongfangshuo = sgs.Sanguosha:getGeneral("dongfangshuo")
+if dongfangshuo then
+	dongfangshuo:addSkill("tanzhishou")
+	dongfangshuo:addSkill("zhiheng")
+	dongfangshuo:addSkill("newlangyan")
+	dongfangshuo:addSkill("fenghuo")
+end
+
+-- 71
+local liguang = sgs.Sanguosha:getGeneral("liguang")
+if liguang then
+	liguang:addSkill("xqianghua")
+	liguang:addSkill("toujivs")
+	liguang:addSkill("tanzhishou")
+	liguang:addSkill("luoyi")
+end
+
+-- 72
+local qihuangong = sgs.Sanguosha:getGeneral("qihuangong")
+if qihuangong then
+	qihuangong:addSkill("tanzhishou")
+	qihuangong:addSkill("bazhen")
+	qihuangong:addSkill("qingling")
+	qihuangong:addSkill("tuqiang")
+end
+
+-- 73
+local kongzi = sgs.Sanguosha:getGeneral("kongzi")
+if kongzi then
+	kongzi:addSkill("hongshadun")
+	kongzi:addSkill("diehun")
+	kongzi:addSkill("heishadun")
+	kongzi:addSkill("lijian")
+end
+
+-- 74
+local liubei = sgs.Sanguosha:getGeneral("liubei")
+if liubei then
+	liubei:addSkill("tanzhishou")
+	liubei:addSkill("zhiheng")
+	liubei:addSkill("shangzhitan")
+	liubei:addSkill("jianxiongyxs")
+end
+
+-- 93
+local direnjie = sgs.Sanguosha:getGeneral("direnjie")
+if direnjie then
+	direnjie:addSkill("tanzhishou")
+	direnjie:addSkill("yingzi")
+	direnjie:addSkill("shangzhitan")
+	direnjie:addSkill("jianxiong")
+end
+
+-- 94
+local zhangsanfeng = sgs.Sanguosha:getGeneral("zhangsanfeng")
+if zhangsanfeng then
+	zhangsanfeng:addSkill("qingling")
+	zhangsanfeng:addSkill("bazhen")
+	zhangsanfeng:addSkill("xqianghua")
+	zhangsanfeng:addSkill("wusheng")
+end
+
+-- 95
+local sp_zhaoyun = sgs.Sanguosha:getGeneral("sp_zhaoyun")
+if sp_zhaoyun then
+	sp_zhaoyun:addSkill("xqianghua")
+	sp_zhaoyun:addSkill("sanbanfu")
+	sp_zhaoyun:addSkill("shazhitan")
+	sp_zhaoyun:addSkill("toujivs")
+end
+
+-- 96
+local sp_lvbu = sgs.Sanguosha:getGeneral("sp_lvbu")
+if sp_lvbu then
+	sp_lvbu:addSkill("shazhitan")
+	sp_lvbu:addSkill("tianyi")
+	sp_lvbu:addSkill("xjingzhun")
+	sp_lvbu:addSkill("toujivs")
+end
+
+-- 97
+local yuwenhuaji = sgs.Sanguosha:getGeneral("yuwenhuaji")
+if yuwenhuaji then
+	yuwenhuaji:addSkill("newlangyan")
+	yuwenhuaji:addSkill("fenghuo")
+	yuwenhuaji:addSkill("shangzhitan")
+	yuwenhuaji:addSkill("jianxiong")
+end
+
+-- 98
+local sudaji = sgs.Sanguosha:getGeneral("sudaji")
+if sudaji then
+	sudaji:addSkill("shangzhitan")
+	sudaji:addSkill("diehun")
+	sudaji:addSkill("tanzhishou")
+	sudaji:addSkill("kongju")
+end
+
+-- 99
+local xiaotaihou = sgs.Sanguosha:getGeneral("xiaotaihou")
+if xiaotaihou then
+	xiaotaihou:addSkill("xjingzhun")
+	xiaotaihou:addSkill("tianyi")
+	xiaotaihou:addSkill("xqianghua")
+	xiaotaihou:addSkill("wusheng")
+end
+
+-- 100
+local shangzhou = sgs.Sanguosha:getGeneral("shangzhou")
+if shangzhou then
+	-- shangzhou:addSkill("万箭")
+	shangzhou:addSkill("zhiheng")
+	shangzhou:addSkill("tanzhishou")
+	shangzhou:addSkill("yingzi")
+end
+
+-- 101
+local aobai = sgs.Sanguosha:getGeneral("aobai")
+if aobai then
+	aobai:addSkill("xqianghua")
+	aobai:addSkill("tianyi")
+	aobai:addSkill("shazhitan")
+	aobai:addSkill("tieji")
+end
+
+-- 102
+local kaisa = sgs.Sanguosha:getGeneral("kaisa")
+if kaisa then
+	-- kaisa:addSkill("shazhitan")
+	-- kaisa:addSkill("tianyi")
+	-- kaisa:addSkill("xqianghua")
+	-- kaisa:addSkill("wusheng")
+end
+
+-- 103
+local napolun = sgs.Sanguosha:getGeneral("napolun")
+if napolun then
+	-- napolun:addSkill("shazhitan")
+	-- napolun:addSkill("tianyi")
+	-- napolun:addSkill("xqianghua")
+	-- napolun:addSkill("wusheng")
+end
+
+-- 104
+local aijiyanhou = sgs.Sanguosha:getGeneral("aijiyanhou")
+if aijiyanhou then
+	-- aijiyanhou:addSkill("shazhitan")
+	-- aijiyanhou:addSkill("tianyi")
+	-- aijiyanhou:addSkill("xqianghua")
+	-- aijiyanhou:addSkill("wusheng")
+end
+
+-- 105
+local zhende = sgs.Sanguosha:getGeneral("zhende")
+if zhende then
+	-- zhende:addSkill("shazhitan")
+	-- zhende:addSkill("tianyi")
+	-- zhende:addSkill("xqianghua")
+	-- zhende:addSkill("wusheng")
+end
+
+-- 106
+local zhitianxinzhang = sgs.Sanguosha:getGeneral("zhitianxinzhang")
+if zhitianxinzhang then
+	-- zhitianxinzhang:addSkill("shazhitan")
+	-- zhitianxinzhang:addSkill("tianyi")
+	-- zhitianxinzhang:addSkill("xqianghua")
+	-- zhitianxinzhang:addSkill("wusheng")
+end
+
+-- 107
+local mchh = sgs.Sanguosha:getGeneral("mchh")
+if mchh then
+	-- mchh:addSkill("shazhitan")
+	-- mchh:addSkill("tianyi")
+	-- mchh:addSkill("xqianghua")
+	-- mchh:addSkill("wusheng")
+end
+
+-- 108
+local ndge = sgs.Sanguosha:getGeneral("ndge")
+if ndge then
+	-- ndge:addSkill("shazhitan")
+	-- ndge:addSkill("tianyi")
+	-- ndge:addSkill("xqianghua")
+	-- ndge:addSkill("wusheng")
+end
+
+-- 109
+local sibada = sgs.Sanguosha:getGeneral("sibada")
+if sibada then
+	-- sibada:addSkill("shazhitan")
+	-- sibada:addSkill("tianyi")
+	-- sibada:addSkill("xqianghua")
+	-- sibada:addSkill("wusheng")
+end
+
+-- 110
+local fems = sgs.Sanguosha:getGeneral("fems")
+if fems then
+	-- fems:addSkill("shazhitan")
+	-- fems:addSkill("fenghuo")
+	-- fems:addSkill("xqianghua")
+	-- fems:addSkill("wusheng")
+end
+
+-- 111
+local min_luobinhan = sgs.Sanguosha:getGeneral("min_luobinhan")
+if min_luobinhan then
+	-- min_luobinhan:addSkill("shazhitan")
+	-- min_luobinhan:addSkill("fenghuo")
+	-- min_luobinhan:addSkill("xqianghua")
+	-- min_luobinhan:addSkill("wusheng")
+end
+
+-- 112
+local chen_luobinhan = sgs.Sanguosha:getGeneral("chen_luobinhan")
+if chen_luobinhan then
+	-- chen_luobinhan:addSkill("shazhitan")
+	-- chen_luobinhan:addSkill("fenghuo")
+	-- chen_luobinhan:addSkill("xqianghua")
+	-- chen_luobinhan:addSkill("wusheng")
+end
+
+-- 140
+local xiajie = sgs.Sanguosha:getGeneral("xiajie")
+if xiajie then
+	xiajie:addSkill("xqianghua")
+	xiajie:addSkill("tianyi")
+	xiajie:addSkill("shazhitan")
+	xiajie:addSkill("liegong")
+end
+
+-- 141
+local weizhongxian = sgs.Sanguosha:getGeneral("weizhongxian")
+if weizhongxian then
+	weizhongxian:addSkill("xjingzhun")
+	weizhongxian:addSkill("toujivs")
+	weizhongxian:addSkill("xqianghua")
+	weizhongxian:addSkill("luoyi")
+end
+
+-- 142
+local gaoqiu = sgs.Sanguosha:getGeneral("gaoqiu")
+if gaoqiu then
+	gaoqiu:addSkill("hongshadun")
+	gaoqiu:addSkill("diehun")
+	gaoqiu:addSkill("tanzhishou")
+	gaoqiu:addSkill("yingzi")
+end
+
+-- 143
+local xmh = sgs.Sanguosha:getGeneral("xmh")
+if xmh then
+	xmh:addSkill("shazhitan")
+	xmh:addSkill("tianyi")
+	xmh:addSkill("xqianghua")
+	xmh:addSkill("liegong")
+end
+
+-- 144
+local xzhurong = sgs.Sanguosha:getGeneral("xzhurong")
+if xzhurong then
+	xzhurong:addSkill("hongshadun")
+	xzhurong:addSkill("qiangxi")
+	xzhurong:addSkill("heishadun")
+	xzhurong:addSkill("lijian")
+end
+
+-- 145
+local liji = sgs.Sanguosha:getGeneral("liji")
+if liji then
+	liji:addSkill("xqianghua")
+	liji:addSkill("tianyi")
+	liji:addSkill("shazhitan")
+	liji:addSkill("liegong")
+end
+
+-- 146
+local wsgui = sgs.Sanguosha:getGeneral("wsgui")
+if wsgui then
+	wsgui:addSkill("xqianghua")
+	wsgui:addSkill("tianyi")
+	wsgui:addSkill("shazhitan")
+	wsgui:addSkill("liegong")
+end
+
+-- 147
+local gcg1 = sgs.Sanguosha:getGeneral("gcg1")
+if gcg1 then
+	gcg1:addSkill("xjingzhun")
+	gcg1:addSkill("wusheng")
+	gcg1:addSkill("shazhitan")
+	gcg1:addSkill("tianyi")
+end
+
+-- 148
+local xiaozhuang = sgs.Sanguosha:getGeneral("xiaozhuang")
+if xiaozhuang then
+	xiaozhuang:addSkill("tanzhishou")
+	xiaozhuang:addSkill("yingzi")
+	xiaozhuang:addSkill("shangzhitan")
+	xiaozhuang:addSkill("jianxiong")
+end
+
+-- 149
+local miyue = sgs.Sanguosha:getGeneral("miyue")
+if miyue then
+	miyue:addSkill("newlangyan")
+	miyue:addSkill("fenghuo")
+	miyue:addSkill("tanzhishou")
+	miyue:addSkill("zhiheng")
+end
+
+-- 150
+local nvwa = sgs.Sanguosha:getGeneral("nvwa")
+if nvwa then
+	nvwa:addSkill("tanzhishou")
+	nvwa:addSkill("yingzi")
+	nvwa:addSkill("shangzhitan")
+	nvwa:addSkill("zhiheng")
+end
+
+-- 152
+local xnianshou = sgs.Sanguosha:getGeneral("xnianshou")
+if xnianshou then
+	xnianshou:addSkill("tanzhishou")
+	xnianshou:addSkill("yiji")
+	xnianshou:addSkill("newlangyan")
+	xnianshou:addSkill("fenghuo")
+end
+
+-- 153
+local tpgz = sgs.Sanguosha:getGeneral("tpgz")
+if tpgz then
+	tpgz:addSkill("tanzhishou")
+	tpgz:addSkill("zhiheng")
+	tpgz:addSkill("xjingzhun")
+	tpgz:addSkill("kongju")
+end
+
+-- 154
+local moxi = sgs.Sanguosha:getGeneral("moxi")
+if moxi then
+	moxi:addSkill("shangzhitan")
+	moxi:addSkill("jianxiong")
+	moxi:addSkill("newlangyan")
+	moxi:addSkill("fenghuo")
 end
