@@ -22,7 +22,7 @@
 15 | 轻敏 | qingmin | 轻灵 | qingling
 16 | 治愈 | jieyin | 医心 | newyixin
 17 | 烽火 | fenghuo | 生有 | 
-18 | 霸王 | wushuang
+18 | 霸王 | wushuang | 探囊 | 
 19 | 红颜 | lijian
 20 | 楚楚 | biyue
 21 | 单骑 | danji
